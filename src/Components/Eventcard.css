@@ -1,0 +1,29 @@
+h2 {    
+    font-size: 36pt;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: 10%;
+    color: black;
+}
+
+p {
+    position: absolute;
+    font-size: 16pt;
+    width: 50%;
+    top: 50%;
+    left: 40%;
+}
+
+.icon {
+    margin-left: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.card {
+    background: none;
+    border: none;
+    padding-bottom: 10%;
+}

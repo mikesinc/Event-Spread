@@ -1,0 +1,20 @@
+.navbar {
+    font-family: monospace;
+    font-size: 18pt;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.navbar:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.nav-link:hover {
+    color: turquoise !important;
+    /* font-weight: bold; */
+}
