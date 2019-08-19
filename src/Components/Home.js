@@ -14,6 +14,12 @@ const Home = () => {
                 <Eventcard event='baby' text='someone having a baby? We cater for themed baby showers (blue or pink) to help brighten your special day' />
                 <Eventcard style={{display: 'flex', flexDirection: 'flex-end'}} event='custom' text='got other plans? send us a message with the details of your event and we will do our best to sort something out for you!'/>
             </Container>
+            <Container fluid className='contact'>
+                <h1>Get in touch!</h1>
+                <form>
+                    <input type="name"></input>
+                </form>
+            </Container>
         </Container>
     )
 }
