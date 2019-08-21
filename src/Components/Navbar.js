@@ -26,7 +26,7 @@ const NavBar = () => {
         <div>
             <Navbar style={visible ? null : { top: '-10%' }} fixed='top' bg="light" expand="sm" variant="light">
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                {visible ? <Navbar.Collapse id="basic-navbar-nav"> 
                     <Nav className="mr-auto links">
                         <Nav.Link href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer'>
                             <img src={require('../assets/images/fb.png')} height="40vw" weight="40vw" alt='fb'></img>
@@ -40,11 +40,12 @@ const NavBar = () => {
                         </Nav.Link>
                     </Nav>
                     <Nav className="ml-auto">
-                        <Nav.Link className="px-5" href="/">_home</Nav.Link>
-                        <Nav.Link className="px-5" onClick={() => setTop('#about')}>_about</Nav.Link>
-                        <Nav.Link className="px-5" onClick={() => setTop('#contact')}>_contact</Nav.Link>
+                        <Nav.Link className="pr-5" href="/">_home</Nav.Link>
+                        <Nav.Link className="pr-5" onClick={() => setTop('#about')}>_about</Nav.Link>
+                        <Nav.Link className="pr-5" onClick={() => setTop('#contact')}>_contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                : null}
             </Navbar>
             
             {!visible ?

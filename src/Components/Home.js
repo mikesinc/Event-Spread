@@ -30,13 +30,13 @@ const Home = () => {
                             <Form.Label column sm={{ span: 1, offset: 2}}>
                                 name*
                             </Form.Label>
-                            <Col sm={2}>
+                            <Col sm={5} lg={3}>
                                 <Form.Control placeholder="first" required />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row}>
                             <Form.Label column sm={{ span: 1, offset: 2}}></Form.Label>
-                            <Col sm={2}>
+                            <Col sm={5} lg={3}>
                                 <Form.Control placeholder="last" required />
                             </Col>
                         </Form.Group>
@@ -44,7 +44,7 @@ const Home = () => {
                             <Form.Label column sm={{ span: 1, offset: 2}}>
                                 email*
                             </Form.Label>
-                            <Col sm={2}>
+                            <Col sm={5} lg={3}>
                                 <Form.Control type="email" placeholder="email" required/>
                             </Col>
                         </Form.Group>
@@ -52,8 +52,8 @@ const Home = () => {
                             <Form.Label column sm={{ span: 1, offset: 2}}>
                                 phone
                             </Form.Label>
-                            <Col sm={1}>
-                                <Form.Control type="email" placeholder="(optional)" />
+                            <Col sm={5} lg={2}>
+                                <Form.Control type="tel" name="phone" placeholder="(optional)" />
                             </Col>
                         </Form.Group>
                         <fieldset>
@@ -61,7 +61,7 @@ const Home = () => {
                                 <Form.Label as="legend" column sm={{ span: 1, offset: 2}}>
                                     event type
                                 </Form.Label>
-                                <Col sm={5}>
+                                <Col sm={5} lg={3}>
                                     <Form.Check
                                         type="radio"
                                         label="birthday"
@@ -93,13 +93,13 @@ const Home = () => {
                             <Form.Label column sm={{ span: 1, offset: 2}}>
                                 description*
                             </Form.Label>
-                            <Col sm={{ span: 5, offset: 2}}>
+                            <Col sm={{ span: 10, offset: 1}} lg={{ span: 8, offset: 2}} >
                                 <Form.Control size="sm" as="textarea" rows="8" placeholder={`tell us about your event... (things like how many people are you expecting? any allergies? etc.) \nthis will help us tailor the experience to your needs`} required />
                                 <h3>(*) required fields</h3>
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row}>
-                            <Col sm={{ span: 2, offset: 6 }}>
+                            <Col sm={{ span: 3, offset: 8 }} lg={{ span: 3, offset: 8 }}>
                                 <Button type="submit" variant="info">send message</Button>
                             </Col>
                         </Form.Group>
