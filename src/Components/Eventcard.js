@@ -4,10 +4,10 @@ import './Eventcard.css'
 
 const Eventcard = ({ event, text, left, right }) => {
     return (
-        <Container fluid className='card' style={{ paddingLeft: `${left}%`, paddingRight: `${right}%` }} >
-            <h2>{event}</h2>
-            <p>{text}</p>
-            <img style={{ right: left === '25' ? '77%' : '3%' }} className='icon' alt='bday' src={require(`../assets/images/${event}.jpg`)}></img>
+        <Container fluid className='card'>
+            <h2 style={{ paddingLeft: right*20+200, paddingRight: left*20+200}}>{event}</h2>
+            <p style={{ paddingLeft: right*20+200, paddingRight: left*20+200}} >{text}</p>
+            <img style={{ left: left, right: right}} className='icon' alt='bday' src={require(`../assets/images/${event}.jpg`)}></img>
         </Container>
     )
 }
