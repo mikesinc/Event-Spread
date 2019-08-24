@@ -1,220 +1,66 @@
-h2 {    
-    font-size: 5vh;
-    padding-top: 10vh;
-    text-align: center;
-}
-
-.card p {
-    text-align: center;
-}
-
-.icon {
-    position: absolute;
-    object-fit: cover;
-    max-width: 50%;
-    width: 100%;
-    height: 100%;
-}
-
+/*overall*/
 .card {
+    justify-content: center;
     background: none;
     border: none;
-    height: 600px;
+    height: 700px;
+    align-items: center !important;
+    transition: 1s;
 }
 
-@media screen and (max-width: 375px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 60%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 1% !important;
+/*card text*/
+.rightText {
+    max-width: 400px;
+    margin-right: 0vw;
+    margin-left: 50vw;
+    text-align: center;
+    transition: 1s;
+}
+.leftText {
+    max-width: 400px;
+    margin-right: 50vw;
+    margin-left: 0vw;
+    text-align: center;
+    transition: 1s;
+}
+h2 {
+    font-size: 32pt;
+    transition: 1s;
+}
+@media screen and (max-width: 690px) {
+    h2 {
+        font-size: 24pt;
     }
     .card p {
-        padding: 5% !important;
-    }
-    .card {
-        height: 500px;
+        font-size: 10pt;
     }
 }
-
-@media screen and (min-width: 375px) and (max-width: 414px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 70%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 1% !important;
+@media screen and (max-width: 530px) {
+    h2 {
+        font-size: 14pt;
     }
     .card p {
-        padding: 5% !important;
-    }
-    .card {
-        height: 600px;
+        font-size: 8pt;
     }
 }
 
-@media screen and (min-width: 414px) and (max-width: 666px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 70%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 1% !important;
-    }
-    .card p {
-        padding: 5% !important;
-    }
-    .card {
-        height: 600px;
-    }
+/*card images*/
+#leftImg {
+    position: absolute;
+    object-fit: cover;
+    max-width: 40%;
+    height: 100%;
+    left: 0;
+    box-shadow: 5px 30px 50px 10px;
+    transition: 1s;
+}
+#rightImg {
+    position: absolute;
+    object-fit: cover;
+    max-width: 40%;
+    height: 100%;
+    right: 0;
+    box-shadow: -5px 30px 50px 10px;
+    transition: 1s;
 }
 
-@media screen and (min-width: 666px) and (max-width: 740px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 70%;
-    }
-    h2 {    
-        font-size: 4vh;
-        padding: 5% !important;
-        padding-bottom: 0% !important;
-    }
-    .card p {
-        padding: 5% !important;
-        padding-top: 2% !important;
-        padding-bottom: 0% !important;
-    }
-    .card {
-        height: 450px;
-    }
-}
-
-
-@media screen and (min-width: 741px) and (max-width: 768px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 80%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 1% !important;
-    }
-    .card p {
-        padding: 5% !important;
-    }
-    .card {
-        height: 1500px;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 800px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 70%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 0% !important;
-    }
-    .card p {
-        padding: 5% !important;
-    }
-    .card {
-        height: 800px;
-    }
-}
-
-@media screen and (min-width: 801px) and (max-width: 896px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 70%;
-    }
-    h2 {    
-        font-size: 5vh;
-        padding: 5% !important;
-        padding-bottom: 0% !important;
-    }
-    .card p {
-        padding: 5% !important;
-        padding-top: 2% !important;
-    }
-    .card {
-        height: 600px;
-    }
-}
-
-@media screen and (min-width: 897px) and (max-width: 950px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 80%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 0% !important;
-    }
-    .card p {
-        padding: 5% !important;
-        padding-top: 2% !important;
-    }
-    .card {
-        height: 1200px;
-    }
-}
-
-@media screen and (min-width: 951px) and (max-width: 1024px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 60%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 0% !important;
-    }
-    .card p {
-        padding: 5% !important;
-        padding-top: 2% !important;
-    }
-    .card {
-        height: 500px;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .icon {
-        bottom: 0;
-        max-width: 100%;
-        height: 75%;
-    }
-    h2 {    
-        font-size: 3vh;
-        padding: 5% !important;
-        padding-bottom: 0% !important;
-    }
-    .card p {
-        padding: 5% !important;
-        padding-top: 2% !important;
-    }
-    .card {
-        height: 800px;
-    }
-}

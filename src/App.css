@@ -1,324 +1,157 @@
+/*Overall Frame*/
 .overall {
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-family: monospace;
-    /* -webkit-user-select: none; */
+}
+h1 {
+    font-size: 36pt;
+    padding: 50px 100px;
+    transition: 1s;
+}
+p {
+    font-size: 12pt;
+    text-align: justify;
+    transition: 1s;
+}
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 32pt;
+        padding: 50px 10vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 20pt;
+    }
 }
 
-.Intro {
-    background: rgba(255, 255, 240, 0.93);
-    height: 100vh;
-    padding: 5%;
-    padding-top: 0%;
-    position: relative;
-    border-top: solid;
-    border-width: 10px;
-}
-
-.body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.events {
-    background: linear-gradient(rgba(231, 232, 223, 1), rgba(0, 225, 255, 0.15));
-    border-top: solid;
-    border-width: 10px;
-}
-
-.HomeBack {
+/*Banner*/
+.Banner {
     background-image: url('./assets/images/spread2-min.jpg');
-    background-size: 2000px;
+    background-size: 105vw;
     background-repeat: no-repeat;
     height: 80vh;
     background-attachment: fixed;
-    box-shadow: -10px 10px 80px 10px rgba(22, 247, 255, 0.3); 
+    transition: 1s;
+}
+@media screen and (max-width: 835px) {
+    .Banner {
+        background-size: 150vw;
+    }
+}
+@media screen and (max-width: 580px) {
+    .Banner {
+        background-size: 200vw;
+    }
+}
+@media screen and (max-width: 435px) {
+    .Banner {
+        background-size: 300vw;
+    }
 }
 
+/*Intro Section*/
+.IntroFrame {
+    background: rgba(255, 255, 240, 0.93);
+    height: 100vh;
+    position: relative;
+    border-top: solid;
+    border-width: 10px;
+    border-color: turquoise;
+    overflow: hidden;
+    transition: 1s;
+}
+.IntroText {
+    max-width: 560px;
+    margin: 100px 100px 150px 100px;
+    transition: 1s;
+}
+#perth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-height: 100%;
+    opacity: 0.3;
+    filter: blur(4px);
+    -webkit-user-select: none;
+    transition: 1s;
+}
+@media screen and (max-width: 1250px) {
+    #perth {
+        left: -20%;
+    }
+}
+@media screen and (max-width: 680px) {
+    #perth {
+        left: -80%;
+    }
+    .IntroText {
+        margin: 20px 10vw 50px 10vw;
+    }
+    .IntroFrame {
+        height: min-content;
+    }
+}
+@media screen and (max-width: 510px) {
+    #perth {
+        left: -150%;
+    }
+}
+@media screen and (max-width: 415px) {
+    #perth {
+        left: -200%;
+    }
+}
+@media screen and (max-width: 415px) {
+    #perth {
+        left: -200%;
+    }
+}
+@media screen and (max-width: 370px) {
+    #perth {
+        left: -250%;
+    }
+}
+@media screen and (max-width: 350px) {
+    #perth {
+        left: -300%;
+    }
+}
+
+/*Event Cards*/
+.events {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(231, 232, 223, 1), rgba(0, 225, 255, 0.15));
+    border-top: solid;
+    border-width: 10px;
+    border-color: turquoise;
+    overflow: hidden;
+    transition: 1s;
+}
+
+/*Contact Page*/
 .contact {
     padding-top: 5%;
     padding-bottom: 5%;
-    /* display: flex;
-    flex-direction: column; */
-    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.6)),url('./assets/images/spread1-min.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.8)),url('./assets/images/spread1-min.jpg');
     background-size: cover;
     background-attachment: fixed;
     border-top: solid;
     border-width: 10px;
+    border-color: turquoise;
+    transition: 1s;
 }
-
-#perth {
-    position: absolute;
-    left: 0;
-    max-height: 100vh;
-    height: 100vh;
-    opacity: 0.3;
-    filter: blur(4px);
-}
-
-#about {
-    padding-bottom: 5%;
-}
-
-h1 {
-    font-size: 6vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 5%;
-}
-
 h3 {
     font-size: 8pt;
-    padding-top: 2%;
     padding-bottom: 2%;
+    transition: 1s;
 }
 
-p {
-    font-size: 16pt;
-    padding: 0% 60% 2% 0%;
-    text-align: justify;
-}
 
-@media screen and (max-width: 375px) {
-    .HomeBack {
-        background-size: 1000px;
-    }
-    h1 {
-        font-size: 5vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 10pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #perth {
-        left: -150%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
 
-@media screen and (min-width: 375px) and (max-width: 414px) {
-    .HomeBack {
-        background-size: 1000px;
-    }
-    h1 {
-        font-size: 5vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 10pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #perth {
-        left: -150%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
 
-@media screen and (min-width: 414px) and (max-width: 666px) {
-    .HomeBack {
-        background-size: 1000px;
-    }
-    h1 {
-        font-size: 5vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 10pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #perth {
-        left: -120%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 666px) and (max-width: 740px) {
-    .HomeBack {
-        background-size: 1000px;
-    }
-    h1 {
-        font-size: 5vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 8pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #perth {
-        left: 0%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 741px) and (max-width: 768px) {
-    .HomeBack {
-        background-size: 1200px;
-    }
-    h1 {
-        font-size: 5vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 12pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 55%;
-    }
-    #perth {
-        left: -70%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 800px) {
-    .HomeBack {
-        background-size: 1500px;
-    }
-    h1 {
-        font-size: 4vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 14pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 50%;
-    }
-    #perth {
-        left: -90%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 801px) and (max-width: 896px) {
-    .HomeBack {
-        background-size: 1000px;
-    }
-    h1 {
-        font-size: 7vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 9pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    #perth {
-        left: 0%;
-    }
-    h3 {
-        font-size: 10pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 897px) and (max-width: 950px) {
-    .HomeBack {
-        background-size: 1500px;
-    }
-    h1 {
-        font-size: 5vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 14pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 55%;
-    }
-    #perth {
-        left: -70%;
-    }
-    h3 {
-        font-size: 12pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 951px) and (max-width: 1024px) {
-    .HomeBack {
-        background-size: 1500px;
-    }
-    h1 {
-        font-size: 6vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 12pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 45%;
-    }
-    #perth {
-        left: 0%;
-    }
-    h3 {
-        font-size: 12pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .HomeBack {
-        background-size: 1500px;
-    }
-    h1 {
-        font-size: 6vh;
-        padding-left: 5%;
-    }
-    p {
-        font-size: 12pt;
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 60%;
-    }
-    #perth {
-        left: -20%;
-    }
-    h3 {
-        font-size: 12pt !important;
-        padding-top: 0%;
-        padding-bottom: 2%;
-    }
-}
 

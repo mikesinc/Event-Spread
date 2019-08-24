@@ -34,16 +34,16 @@ const NavBar = () => {
                         </Nav.Link>
                     </Nav>
                     <Nav className="ml-auto">
-                        <Nav.Link className="pr-5" onClick={() => setTop('#about')}>_about</Nav.Link>
-                        <Nav.Link className="pr-5" onClick={() => setTop('#platter')}>_platters</Nav.Link>
-                        <Nav.Link className="pr-5" onClick={() => setTop('#contact')}>_contact</Nav.Link>
+                        <Nav.Link className="pr-5" onClick={() => setTop('.IntroFrame')}>_about</Nav.Link>
+                        <Nav.Link className="pr-5" onClick={() => setTop('.events')}>_platters</Nav.Link>
+                        <Nav.Link className="pr-5" onClick={() => setTop('.contact')}>_contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 : null}
             </Navbar>
             
             {!visible ?
-                <img onClick={() => setTop('.overall')} id="goup" alt="up" src={require('../assets/images/uparrow.png')} width='50px'></img>
+                <img onClick={() => setTop('.Banner')} id="goup" alt="up" src={require('../assets/images/up.png')} width='50px'></img>
                 :
                 null
             }
