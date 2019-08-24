@@ -15,6 +15,12 @@ p {
     text-align: justify;
     transition: 1s;
 }
+@media screen and (max-height: 414px) {
+    h1 {
+        font-size: 32pt;
+        padding: 50px 5vw;
+    }
+}
 @media screen and (max-width: 767px) {
     h1 {
         font-size: 32pt;
@@ -35,6 +41,11 @@ p {
     height: 80vh;
     background-attachment: fixed;
     transition: 1s;
+}
+@media screen and (max-height: 414px) {
+    .Banner {
+        height: 60vh;
+    }
 }
 @media screen and (max-width: 835px) {
     .Banner {
@@ -79,6 +90,14 @@ p {
     -webkit-user-select: none;
     transition: 1s;
 }
+@media screen and (max-height: 414px) {
+    .IntroText {
+        margin: 20px 10vw 50px 10vw;
+    }
+    .IntroFrame {
+        height: min-content;
+    }
+}
 @media screen and (max-width: 1250px) {
     #perth {
         left: -20%;
@@ -98,11 +117,6 @@ p {
 @media screen and (max-width: 510px) {
     #perth {
         left: -150%;
-    }
-}
-@media screen and (max-width: 415px) {
-    #perth {
-        left: -200%;
     }
 }
 @media screen and (max-width: 415px) {

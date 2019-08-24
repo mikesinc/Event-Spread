@@ -27,7 +27,12 @@ h2 {
     font-size: 32pt;
     transition: 1s;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-height: 414px) {
+    .card {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 690px) and (orientation: portrait)  {
     h2 {
         font-size: 24pt;
     }
@@ -63,4 +68,3 @@ h2 {
     box-shadow: -5px 30px 50px 10px;
     transition: 1s;
 }
-
